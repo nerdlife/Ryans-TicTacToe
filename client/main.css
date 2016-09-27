@@ -1,1 +1,27 @@
-/* CSS declarations go here */
+body {
+    background: url(/images/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+
+.player {
+    text-align: center
+    width: 200px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+
+.mario {
+    
+}
+
+.luigi {
+    
+}
+
+.avatar img{
+    width: 175px;
+}
