@@ -1,5 +1,14 @@
-<template name="gameboard">
+<template name="gameBoard">
 
-
-
+    <table class="the-board">
+        {{#each rows}}
+        <tr>
+            {{#each this}}
+            <td data-id={{this.index}} class="cell">
+            </td>
+            {{/each}}
+        </tr>
+        {{/each}}
+    </table>
+    
 </template>
