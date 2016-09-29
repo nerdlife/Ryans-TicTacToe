@@ -1,10 +1,16 @@
 <template name="endOfGame">
-
-    <div>
-        <h1> (Mario or Luigi) won!</h1>
-        <div>
-            <h2>Play again?</h2>
+    {{#if gameOver}}
+        <div class="result-again-overlay">
+            <h2>
+                {{#if winner}}
+                   <span style="font-size: 5em">{{winner}}'s</span> wins
+                {{else}}
+                    It's a tie
+                {{/if}}
+            </h2>
+            <div class="play-again">
+                <h2 class="blinky"><u>Click here to Play again</u></h2>
+            </div>
         </div>
-    </div>
-
+    {{/if}}
 </template>

@@ -1,22 +1,48 @@
 <template name="chosePlayer">
 
-    <h1>Welcome, choose a player....</h1>
-     <h2>**Mario goes first and is 'X' **</h2>
+    {{#unless started}}
 
-    <!-- Mario -->
-    <div class="mario player">
-        <div class="avatar">
-            <img src="/images/player1.png"/>
-        </div>
-        <h3>Mario</h3>
-    </div>
+    <div class="row">
+        <!-- Mario -->
+        <div class="col-xs-6">
+            <div class="chose mario">
+                <img src="/images/player1.png"/>
+                Mario
+            </div>
+        </div>  <!-- /.col-sm-6 -->
+
+        <!-- Luigi -->
+        <div class="col-xs-6">
+            <div class="chose luigi">
+                <img src="/images/player2.png"/>
+                Luigi
+            </div>
+        </div>  <!-- /.col-sm-6-->
+
+
+    </div>  <!-- /.row -->
     
-    <!-- Luigi -->
-    <div class="luigi player">
-        <div class="avatar">
-            <img src="/images/player2.png"/>
-        </div>
-        <h3>Luigi</h3>
-    </div>
+    {{else}}
+    
+    <div class="row">
+        <!-- Mario -->
+        <div class="col-xs-6">
+            <div class="playing">
+                <img src="/images/player1.png"/>
+                X's
+            </div>
+        </div>  <!-- /.col-sm-6 -->
 
+        <!-- Luigi -->
+        <div class="col-xs-6">
+            <div class="playing luigiplaying">
+                <img src="/images/player2.png"/>
+                O's
+            </div>
+        </div>  <!-- /.col-sm-6-->
+
+
+    </div>  <!-- /.row -->
+
+    {{/unless}}
 </template>

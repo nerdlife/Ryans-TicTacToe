@@ -1,5 +1,6 @@
 body {
-    background: url(/images/bg.png) no-repeat center center fixed, background: url(/images/screen.png) no-repeat center center fixed;
+    text-align: center;
+    background: url(/images/nin.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,37 +8,106 @@ body {
     color: #fff;
 }
 
-.player {
-    text-align: center
-    width: 200px;
-    border: 2px solid #fff;
-    border-radius: 6px;
+h2 {
+    font-size: 5em;
 }
 
-.mario {
-    
-}
-
-.luigi {
-    
-}
-
-.avatar img{
-    width: 175px;
-}
-
-
-.the-board {
+.playing-board {
     border: 3px solid orange;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+.center-table
+{
+  margin: 0 auto !important;
+  float: none !important;
+}
+
 
 
 .cell {
-    display: inline-block;
-    height: 75px;
-    width: 75px;
+    height: 150px;
+    width: 150px;
     border: 1px solid orange;
-    box-sizing: border-box;
-    margin: 0;
+}
+
+.game-piece {
+    width: 100%;
+    height: 100%;
+    background: url() no-repeat center center;
+    background-size: cover;
+}
+
+.game-piece-x {
+    background-image: url(/images/x.png);
+}
+
+.game-piece-o {
+    background-image: url(/images/o.png);
+}
+
+.result-again-overlay {
+    color: #fff;
+    text-shadow: 5px 5px 0 #000;
+    top: 0;
+    /*padding-top: 15vh;*/
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: url(/images/screen.png);
+}
+.blinky {
+    animation: blinker 1.5s linear infinite;
+    color: orange;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.5; }
+}
+
+
+.play-again {
+}
+
+.chose {
+    background: url(/images/screen.png);
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px orange;
+    overflow: hidden;
+    color:red;
+    font-size: 100px;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px #fff;
+}
+
+.chose img {
+    width: 150px;
+}
+
+.chose.mario {
+}
+
+.chose.luigi {
+    color:green;
+}
+
+.playing {
+    background: url(/images/screen.png);
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px orange;
+    overflow: hidden;
+    color: red; 
+    font-size: 100px;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px #fff;
+}
+    
+.luigiplaying {
+    color: green; 
+}
+
+.playing img {
+    width: 150px;
 }

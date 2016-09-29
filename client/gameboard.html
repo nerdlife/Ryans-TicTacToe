@@ -1,14 +1,18 @@
 <template name="gameBoard">
-
-    <table class="the-board">
-        {{#each rows}}
-        <tr>
-            {{#each this}}
-            <td data-id={{this.index}} class="cell">
-            </td>
-            {{/each}}
-        </tr>
-        {{/each}}
-    </table>
-    
+    <div class="row">
+        <div class="col-xs-12">
+            <table class="playing-board center-table">
+                {{#each rows}}
+                <tr>
+                    {{#each this}}
+                    <td data-id={{this.index}} class="cell">
+                        <div class="game-piece game-piece-{{this.value}}"></div>
+                    </td>
+                    {{/each}}
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
 </template>
+
