@@ -4,15 +4,17 @@
 
     <div class="row">
         <!-- Mario -->
-        <div class="col-xs-6">
+        <div class="col-xs-3">
             <div class="chose mario">
                 <img src="/images/player1.png"/>
                 Mario
             </div>
         </div>  <!-- /.col-sm-6 -->
-
+        <div class="col-xs-5">
+{{> gameBoard}}
+</div>
         <!-- Luigi -->
-        <div class="col-xs-6">
+        <div class="col-xs-3">
             <div class="chose luigi">
                 <img src="/images/player2.png"/>
                 Luigi
@@ -26,15 +28,17 @@
     
     <div class="row">
         <!-- Mario -->
-        <div class="col-xs-6">
+        <div class="col-xs-3">
             <div class="playing">
                 <img src="/images/player1.png"/>
                 X's
             </div>
         </div>  <!-- /.col-sm-6 -->
-
+        <div class="col-xs-5">
+{{> gameBoard}}
+</div>
         <!-- Luigi -->
-        <div class="col-xs-6">
+        <div class="col-xs-3">
             <div class="playing luigiplaying">
                 <img src="/images/player2.png"/>
                 O's

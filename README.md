@@ -7,5 +7,4 @@ Tic Tac Toe in MeteorJS
 
 
 
-- .container & .container-fluid in twbs, the diff is kind of interesting look at it later
-
+- also interesting: http://stackoverflow.com/questions/26320228/how-do-i-apply-a-css-style-to-a-template-in-meteor

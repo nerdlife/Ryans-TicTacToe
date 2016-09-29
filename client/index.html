@@ -2,27 +2,25 @@
     <title>Ryans Tic Tac Toe</title>
 </head>
 <body>
-
-    <div class="row">
-        <div class="col-xs-12">
-            <h1>Chose a character & then make your 1st move!</h1>
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Chose a character & then make your 1st move!</h1>
+            </div>
         </div>
-    </div>
 
-    <!-- Player Template -->
+     
 
-    <!-- Game Template -->
-    {{> gameBoard}}
-    {{> chosePlayer}}
+           
+        <!-- Game Template -->
+        {{> chosePlayer}}
 
-    <!-- Result & Play Again Template -->
-    {{> endOfGame}}
-    
-    <!-- Footer -->
-    {{> footer}}
-<!-- 
-<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
-var clickEvent = ((document.ontouchstart!==null)?'click':'touchstart'); -->
+        <!-- Result & Play Again Template -->
+        {{> endOfGame}}
+
+        <!-- Footer -->
+        {{> footer}}
+</div>
 
 </body>
 
