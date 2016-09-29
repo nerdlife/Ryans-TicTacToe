@@ -31,11 +31,13 @@ Template.gameBoard.events({
     'click .cell': function(evt, tmpl) {
         var position = new Number(evt.target.closest('.cell').dataset.id);
         if(board.play(position)) {
-            board.chooseMove();
+            setTimeout(function(){
+                board.chooseMove();
+            },600); 
         }
     },
 });
-
+ 
 Template.endOfGame.helpers({
     gameOver: function() {
         return board.finished();
