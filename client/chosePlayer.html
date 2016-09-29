@@ -1,5 +1,6 @@
 <template name="chosePlayer">
 
+    <!-- CHOSE YOUR PLAYER -->
     {{#unless started}}
 
     <div class="row">
@@ -12,8 +13,11 @@
             </div>
         </div>  <!-- /.col-sm-6 -->
         <div class="col-xs-5">
-{{> gameBoard}}
-</div>
+
+        <!-- Tic Taco Toe  Board-->
+            {{> gameBoard}}
+
+        </div>
         <!-- Luigi -->
         <div class="col-xs-3">
             <div class="chose luigi">
@@ -25,9 +29,10 @@
 
 
     </div>  <!-- /.row -->
-    
+
     {{else}}
-    
+
+    <!-- GAME IN SESSION -->
     <div class="row">
         <!-- Mario -->
         <div class="col-xs-3">
@@ -38,8 +43,11 @@
             </div>
         </div>  <!-- /.col-sm-6 -->
         <div class="col-xs-5">
-{{> gameBoard}}
-</div>
+
+        <!-- Tic Taco Toe  Board-->
+        {{> gameBoard}}
+
+        </div>
         <!-- Luigi -->
         <div class="col-xs-3">
             <div class="playing luigiplaying">

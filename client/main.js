@@ -37,7 +37,7 @@ Template.gameBoard.events({
         }
     },
 });
- 
+
 Template.endOfGame.helpers({
     gameOver: function() {
         return board.finished();
